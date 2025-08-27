@@ -27,6 +27,8 @@
       "components/*": ["src/components/*"],
       "hooks/*": ["src/hooks/*"]
     }
+  ,
+  "baseUrl": "."
   },
   "include": ["src"]
 }
