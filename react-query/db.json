@@ -26,5 +26,19 @@
       "id": "3",
       "title": "The Green Mile"
     }
+  ],
+  "tweets": [
+    {
+      "id": 1,
+      "content": "Hello world!"
+    },
+    {
+      "id": 2,
+      "content": "Learning React Query"
+    },
+    {
+      "id": 3,
+      "content": "JSON Server is great!"
+    }
   ]
 }
