@@ -1,5 +1,15 @@
+import BottomSheet from "./components/BottomSheet";
+import Header from "./components/Header";
+import TaskName from "./components/TaskName";
+
 const App = () => {
-  return <div className="p-4 text-3xl">App</div>;
+  return (
+    <div className="bg-orange-100 h-screen">
+      <Header />
+      <TaskName />
+      <BottomSheet />
+    </div>
+  );
 };
 
 export default App;
