@@ -1,10 +1,12 @@
 import { supabase } from "../supabase";
+import type { Product } from "./ProductList";
 
 type Props = {
   sessionUserId: string | null;
+  getProduct: () => Promise<Product[]>;
 };
 
-const ProductAdd = ({ sessionUserId }: Props) => {
+const ProductAdd = ({ sessionUserId, getProduct }: Props) => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
@@ -28,7 +30,8 @@ const ProductAdd = ({ sessionUserId }: Props) => {
       return alert(error.message);
     }
     console.log(data);
-    alert(data.name + " Success");
+    /* alert(data.name + " Success"); */
+    getProduct();
   };
 
   return (
