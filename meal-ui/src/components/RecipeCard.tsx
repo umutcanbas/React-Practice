@@ -2,10 +2,6 @@ import { Clock, Star } from "lucide-react";
 import bg1 from "../assets/chicken.jpeg";
 import bg2 from "../assets/crepes.jpeg";
 
-type Props = {
-  id: string;
-};
-
 const RecipeCard = ({ id }: { id: string }) => {
   return (
     <div className="felx flex-col gap-4">
